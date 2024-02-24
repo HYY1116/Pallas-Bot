@@ -426,7 +426,7 @@ class Chat:
             if random.random() < Chat.SPEAK_POKE_PROBABILITY:
                 target_id = random.choice(
                     Chat._message_dict[group_id])['user_id']
-                speak_list.append(Message('[CQ:poke,qq={}]'.format(target_id)))
+                speak_list.append(Message('[CQ:touch,id={}]'.format(target_id)))
 
             return (bot_id, group_id, speak_list)
 

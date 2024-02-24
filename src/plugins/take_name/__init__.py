@@ -68,7 +68,7 @@ async def change_name():
 
             # 戳一戳
             await bot.call_api('send_group_msg', **{
-                'message': Message('[CQ:poke,qq={}]'.format(target_user_id)),
+                'message': Message('[CQ:touch,id={}]'.format(target_user_id)),
                 'group_id': group_id
             })
 
